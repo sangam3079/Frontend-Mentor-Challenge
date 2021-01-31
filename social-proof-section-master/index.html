@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .app {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        background-color:hsl(300, 24%, 96%);
+        background-size: cover;
+      
+    
+        
+      }
+      .app__upperpart {
+        align-items: center;
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%; 
+      } 
+      .app__upperpartHeading {
+        flex: 1;
+        margin-left: 5%;
+        margin-right: 20%;
+        padding: 5%;
+        
+      }
+      .app__upperpartHeading h1 {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .app__upperpartRating {
+        flex: 1;
+        margin-left: 3%;
+        
+        
+      }
+
+      .app__lowerpart {
+      
+        display: flex;
+        flex-direction: row;
+
+      }
+      .app__lowerpartBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .app__lowerpartColton {
+        flex:1;
+        background: hsl(300, 43%, 22%);
+        margin-top: 0%;
+        margin-left: 5%;
+        align-items: center;
+        border-radius: 10px;
+        
+      }
+      .app__lowerpartIrene {
+        flex:1; 
+        background: hsl(300, 43%, 22%);
+        margin-top: 1%;
+        margin-left: 2%;
+        align-items: center;
+        border-radius: 10px;
+        
+      }
+      .app__lowerpartAnne {
+        flex:1;
+        background: hsl(300, 43%, 22%);
+        margin-top: 2%;
+        margin-left: 2%;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .app__lowerpartProfile {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 10%;
+        
+      }
+      .app__lowerpartProfileImage {
+        border-radius: 100px;
+        width: 70px;
+        height: 70px;
+      }
+      .app__lowerpartProfileDetail {
+        flex-direction: row;
+        margin-left: 5%;
+    
+      }
+      .app__lowerpartProfileName {
+        font-size: 23px;
+
+      }
+      .app__lowerpartProfileVerify {
+        font-size: 17px;
+        margin-top: -20px;
+        
+  
+      
+      }
+      .app__lowerpartContent {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 5%;
+        font-size: 18px;
+      }
+      .app__attribution {
+        margin-top: 3%;
+        margin-bottom: 10%;
+        font-size: 11px;
+        text-align: center;
+      }
+      .app__attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div> 
+
+    <script type="text/babel">
+      function SocialProof () {
+        return (
+          <div className = "app">
+            <div className = "app__upperpart">
+              <div className="app__upperpartHeading">
+                <h1>
+                  10,000+ of our users love our products. 
+                </h1>
+                <p>
+                  We only provide great products combined with excellent customer service.
+                  See what our satisfied customers are saying about our services
+                </p>
+              </div>
+              <div className = "app__upperpartRating">
+                <p> 👍👍👍👍👍 Rated 5 Stars in Reviews</p>
+                <p> 👍👍👍👍👍 Rated 5 Stars in Report Guru</p>
+                <p> 👍👍👍👍👍 Rated 5 Stars in BestTech</p>
+              </div>
+            </div>
+            <div className="app__lowerpart">
+              <div className="app__lowerpartColton">
+                <div className="app__lowerpartBox">
+                  <div className="app__lowerpartProfile">
+                    <img 
+                      src = 'images/image-colton.jpg'
+                      className = 'app__lowerpartProfileImage'
+                    />
+                    <div className="app__lowerpartProfileDetail">
+                      <p className="app__lowerpartProfileName">Colton Smith</p> 
+                      <p className="app__lowerpartProfileVerify">Verified Buyer</p>
+                    </div>
+                  </div>
+                  <div className="app__lowerpartContent">
+                    <p>"We needed the same printed design as the one we had ordered a week prior.
+                       Not only did they find the original order, but we also received it in time.
+                       Excellent!"
+                     </p>
+                  </div>  
+                </div>
+              </div>  
+              <div className="app__lowerpartIrene">
+                <div className="app__lowerpartBox">
+                  <div className="app__lowerpartProfile">
+                    <img 
+                    src = 'images/image-irene.jpg'
+                    className = 'app__lowerpartProfileImage'
+                    />
+                    <div className="app__lowerpartProfileDetail">
+                      <p className="app__lowerpartProfileName" >Irene Roberts</p> 
+                      <p className="app__lowerpartProfileVerify">Verified Buyer</p>
+                    </div>  
+                  </div>
+                  <div className="app__lowerpartContent">
+                    <p>"Customer service is always excellent and very quick turn around. Completely
+                      delighted with the simplicity of the purchase and the speed of delivery."
+                    </p>
+                  </div>  
+                </div>  
+              </div>  
+              <div className="app__lowerpartAnne">
+                <div className="app__lowerpartBox">
+                  <div className="app__lowerpartProfile">
+                    <img 
+                      src = 'images/image-anne.jpg'
+                      className = 'app__lowerpartProfileImage' 
+                    />
+                    <div className ="app__lowerpartProfileDetail">  
+                      <p className="app__lowerpartProfileName">Anne Wallace</p> 
+                      <p className="app__lowerpartProfileVerify">Verified Buyer</p>
+                    </div>
+                  </div>  
+                  <div className="app__lowerpartContent">     
+                    <p>"Put an order with this company and can only praise them for the very high
+                       standard. Will definitely use them again and recommend them to everyone!"
+                    </p>
+                  </div>  
+                </div>
+              </div>      
+            </div>
+             
+            <div class="app__attribution">
+              Challenge by
+              <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+              Frontend Mentor</a>. Coded by <a href="#">sangam poudel</a>.
+            </div>    
+          </div> 
+        )
+      }
+      ReactDOM .render(<SocialProof/>, document.getElementById("app"));
+
+    </script>
+    
+  </body>
+</html>
